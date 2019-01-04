@@ -1,20 +1,7 @@
 # kafka-thru-http
-Welcome to the KAFKA THROUGH HTTP Wiki!
-
-### Issues
-
-* Different versions of Messaging systems, Cross consuming Topics seems to be a pain. especially when you do not adapt to the versions class in the consuming library be it TIBCO/SNS/ or even KAFKA
-* With KAFKA: A Consumer should always be in the listening front and cannot be notified as KAFKA is more of a PULL than a PUSH. 
-* Messaging systems contained in different platforms (Cloud - AWS/Azure/TPC/.. or On-Premises) and allowing them to cross-talk
 
 
-### Solution*
-![KAFKA NODE ](https://github.com/SanjayJDM/kafka-thru-http/blob/master/HTTP-MESSAGE.png)
-
-**Identity Connect:** The calls for Http Rest Wrapper for Producer and Consumer should be authorised by identity. This will be done by passing a service token along with the request.
-
-***
-##  MORE ON THE PoC
+Welcome to the KAFKA thru HTTP wiki!
 
 ### KAFKA
 I guess most of us are aware of the advantages that KAFKA brings - it's a distributed messaging service/ system -  providing highly scalable, highly available and resilient messaging architecture through a pub-sub model.
@@ -23,6 +10,20 @@ More on Kafka - [https://kafka.apache.org/intro](https://kafka.apache.org/intro)
 
 Download Kafka here - https://kafka.apache.org/downloads
 ***
+
+### Issues
+
+* Different versions of Messaging systems, Cross consuming Topics seems to be a pain. especially when you do not adapt to the versions class in the consuming library 
+* Consuming messages from different types of messaging systems TIBCO/SNS/ or even KAFKA. Messaging systems contained in different platforms (Cloud - AWS/Azure/TPC/.. or On-Premises) and allowing them to cross-talk is always difficult.
+* KAFKA always PUll than a PUSH : With KAFKA, a Consumer should always be in the listening front and cannot be notified as KAFKA is more of a PULL than a PUSH. 
+
+### Solution*
+![](https://github.com/SanjayJDM/kafka-thru-http/blob/master/HTTP-MESSAGE.png)
+
+***
+##  MORE ON THIS _Simple_ PoC
+
+
 **MAKING THE PoC RUN!!**
 
 ### Installing and Running 
@@ -78,7 +79,7 @@ go to Postman or Curl and check if the message can be sent to Topics. Remember t
 > 	"message":"hello from a http producer"
 > }'`
 
-![KAFKA NODE ](https://github.dev.global.tesco.org/yx74/KAFKA-NODE-REST/blob/master/HTTPProducer-Postman.png)
+![KAFKA NODE ](https://github.com/SanjayJDM/kafka-thru-http/blob/master/HTTPProducer-Postman.png)
 ***
 
 now run the http consumer:
@@ -92,7 +93,7 @@ To Check the consumer - go to Postman or Curl and retrieve the messages that was
 >   `-H 'cache-control: no-cache' \`
 >   `-H 'content-type: application/json' `
 
-![KAFKA NODE ](https://github.dev.global.tesco.org/yx74/KAFKA-NODE-REST/blob/master/HTTPConsumer-Postman.png)
+![KAFKA NODE ](https://github.com/SanjayJDM/kafka-thru-http/blob/master/HTTPConsumer-Postman.png)
 ***
 
 ### Implementing Callbacks / Webhook.

@@ -18,6 +18,10 @@ Download Kafka here - https://kafka.apache.org/downloads
 * KAFKA always PUll than a PUSH : With KAFKA, a Consumer should always be in the listening front and cannot be notified as KAFKA is more of a PULL than a PUSH. 
 
 ### Solution*
+
+Enabling KAFKA through Http Endpoints (Producer and Consumer). 
+Creating a local Call-Back Consumer to invoke web-hooks (if a message comes from a certain Topic).
+
 ![](https://github.com/SanjayJDM/kafka-thru-http/blob/master/HTTP-MESSAGE.png)
 
 ***

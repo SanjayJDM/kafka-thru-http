@@ -1,6 +1,3 @@
-# kafka-thru-http
-
-
 Welcome to the KAFKA thru HTTP wiki!
 
 ### KAFKA
@@ -65,6 +62,13 @@ To run the code and since its node based, installing Node is a must
 Download Node here - https://nodejs.org/en/download/
 
 PS: I have used > [kafka-node](https://www.npmjs.com/package/kafka-node) as a Node.js client with Zookeeper integration for Apache Kafka 0.8.1 and later.
+
+Install the following through `npm`
+
+* `npm install express`
+* `npm install node-yaml-config`
+* `npm install kafka-node`
+
 
 Download the code: _producer.js_ , _consumer.js_ and _package.json_ locally 
 

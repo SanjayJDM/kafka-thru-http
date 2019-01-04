@@ -108,9 +108,10 @@ To Check the consumer - go to Postman or Curl and retrieve the messages that was
 
 Download the code : _callback_consumer.js_ , _config.yml_ , _restserver.js_ and  _restserver_3001.js_
 
-> _callback_consumer.js_ : A consumer used for callback.
+> _callback_consumer.js_ : The Local consumer which is used for callback functionalities.
 
-Looking up for topics: 
+Workflow:
+Upon receiving the messages, the code looks up for particular Topics to trigger webhook calls: 
 
 > `consumer = new Consumer(client,`
 >         `[{ topic: 'Post', offset: 0},{ topic: 'Posts', offset: 0}],`
@@ -118,7 +119,11 @@ Looking up for topics:
 >             `autoCommit: false`
 >         `}`
 >     `);`
+
+`invokeCallBack()` Checks for the Topic > post and invokes a web-hook that is registered.   
 __________________________________________________________________________________________________________________
+registering webhook Url's:
+
 > _config.yml_ : Acts as the register to add URL's
 
 > `default:`

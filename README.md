@@ -9,7 +9,7 @@ Welcome to the KAFKA THROUGH HTTP Wiki!
 
 
 ### Solution*
-![KAFKA NODE ](https://github.dev.global.tesco.org/yx74/KAFKA-NODE-REST/blob/master/HTTP-MESSAGE.png)
+![KAFKA NODE ](https://github.com/SanjayJDM/kafka-thru-http/blob/master/HTTP-MESSAGE.png)
 
 **Identity Connect:** The calls for Http Rest Wrapper for Producer and Consumer should be authorised by identity. This will be done by passing a service token along with the request.
 

@@ -1,0 +1,5 @@
+default:
+  callback:
+    post: 'http://localhost:3000/webhook/update?myParam='
+    posts: 'http://localhost:3001/webhook/update?myParam='
+  
